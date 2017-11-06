@@ -481,3 +481,24 @@ function doSomething() {
   // 无法优化，该函数是一个闭包
   return func();
 }
+
+/* 如何使用尾调用优化 */
+
+function factorial(n) {
+  if (n <= 1) {
+    return 1;
+  } else {
+    // 无法优化，必须在返回后执行惩罚操作
+    return n * factorial(n - 1);
+  }
+}
+
+function factorial(n, p = 1) {
+  if (n <= 1) {
+    return 1 * p;
+  } else {
+    let result = n * p;
+    // 优化后
+    return factorial(n - 1, result);
+  }
+}
