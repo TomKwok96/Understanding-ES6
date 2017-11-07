@@ -1,0 +1,23 @@
+{
+  "name": "understanding-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Chapter 01.js",
+  "scripts": {
+    "build": "babel demo.js -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomGuo96/Understanding-ES6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomGuo96/Understanding-ES6/issues"
+  },
+  "homepage": "https://github.com/TomGuo96/Understanding-ES6#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

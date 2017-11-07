@@ -1,5 +1,7 @@
 .idea/*
 .DS_Store
 .ATStore
+node_modules/*
+lib/*
 demo.js
 demo.html
